@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <img src="download.png" 
+             alt="Rick and Morty Logo" class="logo">
+
+        <!-- SEARCH AREA -->
+        <div class="search-area">
+            <input type="text" id="searchInput" placeholder="Search character...">
+
+            <select id="statusFilter">
+                <option value="">Status</option>
+                <option value="alive">Alive</option>
+                <option value="dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <select id="genderFilter">
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            <select id="speciesFilter">
+                <option value="">Species</option>
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+            </select>
+
+            <button id="clearBtn">Clear</button>
+            <button id="randomBtn" class="pulse-btn">Random Character</button>
+
+        </div>
+
+        <!-- CHARACTER GRID -->
+        <div id="cardContainer" class="grid"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>
