@@ -130,6 +130,7 @@ body {
 
   /* simple animation */
   animation: pulse 1.6s infinite ease-in-out;
+
 }
 
 @keyframes pulse {
@@ -143,3 +144,27 @@ body {
     box-shadow: 0 0 5px #32ff6a;
   }
 }
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.footer-img {
+    width: 500px;
+    filter: drop-shadow(0 0 10px #00eaff55);
+}
+
+.footer-text {
+    color: #00eaff;
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 350px;
+    line-height: 1.4;
+    text-align: left;
+}
+
