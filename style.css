@@ -29,6 +29,17 @@ body {
   margin: 0 auto 30px auto;
 }
 
+/* SUBTITLE */
+.subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+
 /* SEARCH AREA */
 .search-area {
   display: flex;
@@ -64,6 +75,13 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
+}
+
+/* Center single card (random character) */
+.grid.center-single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* CHARACTER CARD */
