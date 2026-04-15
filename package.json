@@ -1,0 +1,13 @@
+{
+  "name": "rick-and-morty-api-2",
+  "version": "1.0.0",
+  "description": "This project is a character explorer built using the Rick and Morty API.",
+  "main": "script.js",
+  "scripts": {
+    "ls": "live-server",
+    "ts": "tsc --watch"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC"
+}

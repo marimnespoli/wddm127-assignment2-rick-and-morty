@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and Morty Explorer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick and Morty Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
 </head>
+
 <body>
+  <div class="container">
 
-    <div class="container">
+    <img src="logo.png" alt="Rick and Morty Logo" class="logo">
 
+    <p class="subtitle">
+      A simple web app that lets you search and filter Rick and Morty characters.
+    </p>
 
-         <!-- logo -->
-       <img src="logo.png" alt="Rick and Morty Logo" class="logo" title="Rick and Morty Explorer">
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search character...">
 
-       <p class="subtitle">A simple web app that lets you search and filter Rick and Morty characters.</p>
+      <select id="statusFilter">
+        <option value="">Status</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+      </select>
 
+      <select id="genderFilter">
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+      </select>
 
+      <select id="speciesFilter">
+        <option value="">Species</option>
+        <option value="Human">Human</option>
+        <option value="Alien">Alien</option>
+      </select>
 
-        <!-- SEARCH AREA -->
-        <div class="search-area">
-            <input type="text" id="searchInput" placeholder="Search character...">
-
-            <select id="statusFilter">
-                <option value="">Status</option>
-                <option value="alive">Alive</option>
-                <option value="dead">Dead</option>
-                <option value="unknown">Unknown</option>
-            </select>
-
-            <select id="genderFilter">
-                <option value="">Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="genderless">Genderless</option>
-                <option value="unknown">Unknown</option>
-            </select>
-
-            <select id="speciesFilter">
-                <option value="">Species</option>
-                <option value="Human">Human</option>
-                <option value="Alien">Alien</option>
-            </select>
-
-            <button id="clearBtn">Clear</button>
-            <button id="randomBtn" class="pulse-btn">Random Character</button>
-
-        </div>
-
-<!-- Character grid where results will be displayed -->
-<div id="cardContainer" class="grid"></div>
-        <div id="cardContainer" class="grid"></div>
-
+      <button id="clearBtn">Clear</button>
+      <button id="searchBtn">Search</button>
+      <button id="randomBtn" class="pulse-btn">Random Character</button>
     </div>
 
-    <footer class="footer">
+    <div id="cardContainer" class="grid"></div>
+
+  </div>
+
+  <footer class="footer">
     <img src="footer.png" alt="Rick and Morty image" class="footer-img">
     <p>Thanks for visiting! If something broke... it was definitely Morty’s fault.</p>
-</footer>
+  </footer>
 
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-
-
+  <script src="./dist/script.js" type="module"></script>
 </body>
 </html>
